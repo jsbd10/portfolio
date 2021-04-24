@@ -1,2 +1,4 @@
 # Portfolio
-Is my portfolio with other projects that I made, and my skills. Welcome!
+This is my portfolio.
+There are academic projects and personal.
+Welcome!
