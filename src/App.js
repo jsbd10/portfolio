@@ -1,12 +1,18 @@
+import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Components/Navbar/index'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './Components/pages'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Portfolio</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={ Home } />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
