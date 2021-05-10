@@ -4,6 +4,8 @@
     --primary-white: #fff;
     --primary-orange: #f9ab00;
     --primary-dark: rgba(255, 255, 255, 0);
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
 }
 *{
     font-family: 'Sora', sans-serif;
@@ -11,7 +13,10 @@
     margin: 0;
     padding: 0;
 }
-/******************* NavBAr ******************/
+/******************* Navbar ******************/
+nav{
+    z-index: 2;
+}
 .logo{
     width: 3.5rem;
 }
@@ -38,4 +43,53 @@ nav a.nav-link{
 
 .navbar-nav > li > a:hover{
     border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/******************* Header ******************/
+
+.header-wraper{
+    position: relative;
+    background: url("/src/images/Header2.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:88.5vh;
+}
+
+.main-info{
+    display: flex;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Sora', sans-serif; 
+}
+.main-info h1{
+    color: var(--primary-orange);
+} 
+
+/*----------------------------- Typed text ----------------------*/
+.typed-text{
+    font-size: 1.5rem;
+    color: var(--primary-white)
+}    
+/*----------------------------- header main offer button ----------------------*/
+.btn-main-offer{
+    border: 1px var(--primary-red);
+}
+/*----------------------------- Particles ----------------------*/
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 100vh;
+    width:  100vw;
+    z-index: 1;
+}
+@media(max-width:768px){
+    .particles-canvas{
+        display:none
+    }
 }
